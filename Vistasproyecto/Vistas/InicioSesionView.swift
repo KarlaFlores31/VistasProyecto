@@ -1,5 +1,5 @@
 //
-//  inicio_sesionView.swift
+//  InicioSesionView.swift
 //  Vistasproyecto
 //
 //  Created by Karla Flores on 09/10/26.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct inicio_sesionView: View {
+struct InicioSesionView: View {
     @State var correo = ""
     @State var contra = ""
     @State var verContra = false
@@ -56,7 +56,9 @@ struct inicio_sesionView: View {
                             .padding(12)
                             .background(Color.colorazulclaro)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
+
                     }
+                    .allowsHitTesting(false)
 
                     HStack {
                         Button(action: {}) {
@@ -69,9 +71,10 @@ struct inicio_sesionView: View {
                         }
                         Button(action: {}) {
                             HStack {
-                                Text("G")
-                                    .bold()
-                                    .foregroundStyle(Color.colorazul)
+                                Image("Google")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 14, height: 14)
                                 Text("Google")
                                     .foregroundStyle(Color.black)
                             }
@@ -169,15 +172,6 @@ struct inicio_sesionView: View {
                 .font(.subheadline)
                 .frame(maxWidth: .infinity)
 
-                HStack {
-                    Image(systemName: "checkmark.shield")
-                        .foregroundStyle(Color.colorverde)
-                    Text("Respaldado por más de 50 universidades e instituciones aliadas")
-                        .font(.caption2)
-                        .foregroundStyle(Color.gray)
-                }
-                .modifier(TarjetaViewModifier(colorFondo: Color.colorazulclaro.opacity(0.5)))
-
                 Text("Al continuar, aceptas nuestros Términos de Servicio y Privacidad Educativa.")
                     .font(.caption2)
                     .foregroundStyle(Color.gray)
@@ -191,5 +185,5 @@ struct inicio_sesionView: View {
 }
 
 #Preview{
-    inicio_sesionView()
+    InicioSesionView()
 }
