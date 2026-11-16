@@ -1,16 +1,30 @@
-//
-//  InicioSesionView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 09/10/26.
-//
-
 import SwiftUI
 
 struct InicioSesionView: View {
+    @Environment(AppEstado.self) var estado
     @State var correo = ""
     @State var contra = ""
     @State var verContra = false
+    @State var mensajeError = ""
+    @State var mostrarRecuperar = false
+    @State var mostrarRegistro = false
+
+    var correoValido: Bool {
+        AppEstado.correoValido(correo)
+    }
+
+    func iniciarSesion() {
+        if !correoValido {
+            mensajeError = "Escribe un correo válido."
+        } else if !Cuentas.existe(correo) {
+            mensajeError = "No hay una cuenta con ese correo. Regístrate primero."
+        } else if !Cuentas.contraCorrecta(correo: correo, contra: contra) {
+            mensajeError = "La contraseña es incorrecta."
+        } else {
+            mensajeError = ""
+            estado.iniciarSesion(correo: correo)
+        }
+    }
 
     var body: some View {
         ScrollView {
@@ -48,7 +62,9 @@ struct InicioSesionView: View {
                 }
 
                 VStack(spacing: 14) {
-                    Button(action: {}) {
+                    Button(action: {
+                        estado.iniciarSesion(correo: Cuentas.correoDemo)
+                    }) {
                         Label("Continuar con correo institucional", systemImage: "building.columns")
                             .font(.subheadline.weight(.semibold))
                             .foregroundStyle(Color.colorazul)
@@ -58,36 +74,10 @@ struct InicioSesionView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
 
                     }
-                    .allowsHitTesting(false)
-
-                    HStack {
-                        Button(action: {}) {
-                            Label("Apple", systemImage: "applelogo")
-                                .frame(maxWidth: .infinity)
-                                .padding(12)
-                                .background(Color.black)
-                                .foregroundStyle(Color.white)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                        }
-                        Button(action: {}) {
-                            HStack {
-                                Image("Google")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 14, height: 14)
-                                Text("Google")
-                                    .foregroundStyle(Color.black)
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(12)
-                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3)))
-                        }
-                    }
-                    .font(.subheadline.weight(.semibold))
 
                     HStack {
                         Rectangle().fill(Color.gray.opacity(0.3)).frame(height: 1)
-                        Text("o inicia con tu correo personal")
+                        Text("o inicia con tu correo")
                             .font(.caption2)
                             .foregroundStyle(Color.gray)
                             .fixedSize()
@@ -114,7 +104,9 @@ struct InicioSesionView: View {
                             Text("Contraseña")
                                 .font(.caption.weight(.semibold))
                             Spacer()
-                            Button(action: {}) {
+                            Button(action: {
+                                mostrarRecuperar = true
+                            }) {
                                 Text("¿Olvidaste tu contraseña?")
                                     .font(.caption)
                             }
@@ -136,7 +128,16 @@ struct InicioSesionView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3)))
                     }
 
-                    Button(action: {}) {
+                    if mensajeError != "" {
+                        Label(LocalizedStringKey(mensajeError), systemImage: "exclamationmark.circle")
+                            .font(.caption)
+                            .foregroundStyle(Color.colorrojo)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+
+                    Button(action: {
+                        iniciarSesion()
+                    }) {
                         HStack {
                             Text("Iniciar Sesión")
                             Image(systemName: "arrow.right")
@@ -148,24 +149,16 @@ struct InicioSesionView: View {
                         .foregroundStyle(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
-
-                    HStack {
-                        Image(systemName: "bolt.fill")
-                            .foregroundStyle(Color.colorverde)
-                        Text("Algoritmo de Compatibilidad")
-                            .font(.caption2)
-                            .foregroundStyle(Color.gray)
-                        Spacer()
-                        EtiquetaView(texto: "v3.2 Activo", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
-                    }
                 }
                 .modifier(TarjetaViewModifier())
 
                 VStack(spacing: 4) {
                     Text("¿Aún no tienes cuenta?")
                         .foregroundStyle(Color.gray)
-                    Button(action: {}) {
-                        Text("Regístrate aquí y calcula tu compatibilidad")
+                    Button(action: {
+                        mostrarRegistro = true
+                    }) {
+                        Text("Regístrate aquí")
                             .bold()
                     }
                 }
@@ -179,11 +172,21 @@ struct InicioSesionView: View {
                     .frame(maxWidth: .infinity)
             }
             .padding()
+            .anchoMaximo()
         }
         .background(Color.colorfondo)
+        .alert("Recuperar contraseña", isPresented: $mostrarRecuperar) {
+            Button("OK") {}
+        } message: {
+            Text("Tu cuenta se guarda solo en este iPhone. Si ya iniciaste sesión, puedes cambiar tu contraseña en Perfil › Cuenta y seguridad.")
+        }
+        .sheet(isPresented: $mostrarRegistro) {
+            RegistroView()
+        }
     }
 }
 
 #Preview{
     InicioSesionView()
+        .environment(AppEstado())
 }

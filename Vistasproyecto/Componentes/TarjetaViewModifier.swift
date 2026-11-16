@@ -1,14 +1,7 @@
-//
-//  TarjetaViewModifier.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct TarjetaViewModifier: ViewModifier {
-    var colorFondo: Color = .white
+    var colorFondo: Color = Color.colortarjeta
     var colorBorde: Color = .gray.opacity(0.2)
 
     func body(content: Content) -> some View {
@@ -18,5 +11,13 @@ struct TarjetaViewModifier: ViewModifier {
             .background(colorFondo)
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(colorBorde))
+    }
+}
+
+extension View {
+    func anchoMaximo() -> some View {
+        self
+            .frame(maxWidth: 600)
+            .frame(maxWidth: .infinity)
     }
 }

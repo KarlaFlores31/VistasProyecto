@@ -1,14 +1,7 @@
-//
-//  EtiquetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct EtiquetaView: View {
-    var texto: String
+    var texto: LocalizedStringKey
     var icono: String = ""
     var colorTexto: Color = .gray
     var colorFondo: Color = .gray.opacity(0.1)

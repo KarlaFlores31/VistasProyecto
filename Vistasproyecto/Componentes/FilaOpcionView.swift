@@ -1,17 +1,12 @@
-//
-//  FilaOpcionView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct FilaOpcionView: View {
     var icono: String
-    var titulo: String
-    var subtitulo: String
+    var titulo: LocalizedStringKey
+    var subtitulo: LocalizedStringKey
     var etiqueta: String = ""
+    var colorEtiqueta: Color = Color.colorverde
+    var fondoEtiqueta: Color = Color.colorverdeclaro
 
     var body: some View {
         HStack(spacing: 12) {
@@ -25,7 +20,7 @@ struct FilaOpcionView: View {
                     Text(titulo)
                         .font(.subheadline.weight(.semibold))
                     if etiqueta != "" {
-                        EtiquetaView(texto: etiqueta, colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
+                        EtiquetaView(texto: LocalizedStringKey(etiqueta), colorTexto: colorEtiqueta, colorFondo: fondoEtiqueta)
                     }
                 }
                 Text(subtitulo)
@@ -45,7 +40,7 @@ struct FilaOpcionView: View {
         FilaOpcionView(icono: "graduationcap", titulo: "Datos Universitarios y Promedio", subtitulo: "IEST · Licenciatura · 9.2 GPA")
         FilaOpcionView(icono: "folder", titulo: "Documentos y Kardex Oficial", subtitulo: "Kardex, CV Europass, Cartas", etiqueta: "3 listos")
     }
-    .background(Color.white)
+    .background(Color.colortarjeta)
     .clipShape(RoundedRectangle(cornerRadius: 16))
     .padding()
     .background(Color.colorfondo)

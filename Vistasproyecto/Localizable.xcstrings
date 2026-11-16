@@ -1,0 +1,3843 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "¡Atención! La Beca Fundación Carolina cierra en 12 días. Te falta subir 1 documento para completar tu expediente y no perder tu candidatura." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heads up! The Fundación Carolina Scholarship closes in 12 days. You still need to upload 1 document to complete your file and keep your application."
+          }
+        }
+      }
+    },
+    "¡Faltan %lld días para que cierre!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only %lld days left before it closes!"
+          }
+        }
+      }
+    },
+    "¿Aún no tienes cuenta?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't have an account yet?"
+          }
+        }
+      }
+    },
+    "¿Cancelar postulación?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel application?"
+          }
+        }
+      }
+    },
+    "¿Cerrar sesión?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out?"
+          }
+        }
+      }
+    },
+    "¿Olvidaste tu contraseña?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot your password?"
+          }
+        }
+      }
+    },
+    "¿Qué quieres hacer con este archivo?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What do you want to do with this file?"
+          }
+        }
+      }
+    },
+    "/ 10" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/ 10"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ · %@ GPA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ GPA"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$@ GPA"
+          }
+        }
+      }
+    },
+    "%@ · Promedio %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · GPA %2$@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · Promedio %2$@"
+          }
+        }
+      }
+    },
+    "%lld activas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld active"
+          }
+        }
+      }
+    },
+    "%lld nuevas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld new"
+          }
+        }
+      }
+    },
+    "%lld preferencias elegidas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld preferences selected"
+          }
+        }
+      }
+    },
+    "%lld%% Compatible" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% Compatible"
+          }
+        }
+      }
+    },
+    "%lld%% Match" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%% Match"
+          }
+        }
+      }
+    },
+    "≈" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "≈"
+          }
+        }
+      }
+    },
+    "$1,900 MXN bimestrales" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "$1,900 MXN every two months"
+          }
+        }
+      }
+    },
+    "$12,000 USD + Manutención" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "$12,000 USD + Living expenses"
+          }
+        }
+      }
+    },
+    "£30,000 + Vuelos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "£30,000 + Flights"
+          }
+        }
+      }
+    },
+    "€1,400 al mes + colegiatura" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€1,400 per month + tuition"
+          }
+        }
+      }
+    },
+    "€992 al mes + seguro médico" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€992 per month + health insurance"
+          }
+        }
+      }
+    },
+    "2 años de experiencia profesional" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 years of work experience"
+          }
+        }
+      }
+    },
+    "2 años exp. laboral / liderazgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 years work / leadership exp."
+          }
+        }
+      }
+    },
+    "2 cartas de recomendación" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 recommendation letters"
+          }
+        }
+      }
+    },
+    "3 cartas de recomendación" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 recommendation letters"
+          }
+        }
+      }
+    },
+    "3 de 5 requisitos listos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 of 5 requirements ready"
+          }
+        }
+      }
+    },
+    "3 listos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 ready"
+          }
+        }
+      }
+    },
+    "4 ensayos de postulación" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4 application essays"
+          }
+        }
+      }
+    },
+    "8.5 (Corte estándar)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8.5 (Standard cutoff)"
+          }
+        }
+      }
+    },
+    "50% de créditos cubiertos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50% of credits completed"
+          }
+        }
+      }
+    },
+    "85% listo" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "85% ready"
+          }
+        }
+      }
+    },
+    "98% Compatible" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "98% Compatible"
+          }
+        }
+      }
+    },
+    "100 plazas disponibles" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 spots available"
+          }
+        }
+      }
+    },
+    "100% Dotación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100% Funded"
+          }
+        }
+      }
+    },
+    "Abierta hasta Julio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open until July"
+          }
+        }
+      }
+    },
+    "Abrir sitio oficial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open official website"
+          }
+        }
+      }
+    },
+    "Acceso Oficial a Becas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Official Scholarship Access"
+          }
+        }
+      }
+    },
+    "Acción Requerida" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action Required"
+          }
+        }
+      }
+    },
+    "Aceptación en un posgrado nacional" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Admission to a national graduate program"
+          }
+        }
+      }
+    },
+    "Actualizaciones del sistema" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System updates"
+          }
+        }
+      }
+    },
+    "Agrégala en Editar perfil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add it in Edit profile"
+          }
+        }
+      }
+    },
+    "Al continuar, aceptas nuestros Términos de Servicio y Privacidad Educativa." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By continuing, you accept our Terms of Service and Educational Privacy policy."
+          }
+        }
+      }
+    },
+    "Al día" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Up to date"
+          }
+        }
+      }
+    },
+    "Alemania" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Germany"
+          }
+        }
+      }
+    },
+    "Alertas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerts"
+          }
+        }
+      }
+    },
+    "Alta compatibilidad (+90%)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High compatibility (+90%)"
+          }
+        }
+      }
+    },
+    "Apoyo mensual durante un año" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly support for one year"
+          }
+        }
+      }
+    },
+    "Apoyo único de $15,000 MXN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-time support of $15,000 MXN"
+          }
+        }
+      }
+    },
+    "Apoyo único de $100,000 MXN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-time support of $100,000 MXN"
+          }
+        }
+      }
+    },
+    "Aprobar examen de selección" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pass the selection exam"
+          }
+        }
+      }
+    },
+    "Área" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Area"
+          }
+        }
+      }
+    },
+    "Área de conocimiento" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Field of study"
+          }
+        }
+      }
+    },
+    "Áreas de Interés y Especialidad" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Areas of Interest and Specialty"
+          }
+        }
+      }
+    },
+    "Arriba del corte estándar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Above the standard cutoff"
+          }
+        }
+      }
+    },
+    "Aún no subes tu Kardex" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You haven't uploaded your transcript yet"
+          }
+        }
+      }
+    },
+    "Aún no te has postulado a ninguna beca." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You haven't applied to any scholarship yet."
+          }
+        }
+      }
+    },
+    "Aviso 3 días antes del cierre" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice 3 days before closing"
+          }
+        }
+      }
+    },
+    "Ayer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yesterday"
+          }
+        }
+      }
+    },
+    "Bachillerato" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High school"
+          }
+        }
+      }
+    },
+    "Bachillerato terminado" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High school completed"
+          }
+        }
+      }
+    },
+    "Beca de Excelencia Santander" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Santander Excellence Scholarship"
+          }
+        }
+      }
+    },
+    "Beca Fundación Carolina 2025" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fundación Carolina Scholarship 2025"
+          }
+        }
+      }
+    },
+    "Beca Google Student Mobility 2025 coincide con tu perfil (96% Match)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google Student Mobility Scholarship 2025 matches your profile (96% Match)."
+          }
+        }
+      }
+    },
+    "BecaMatch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BecaMatch"
+          }
+        }
+      }
+    },
+    "Becas Guardadas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Scholarships"
+          }
+        }
+      }
+    },
+    "Bienvenido a BecaMatch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to BecaMatch"
+          }
+        }
+      }
+    },
+    "Bootcamp 100% gratuito" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100% free bootcamp"
+          }
+        }
+      }
+    },
+    "Borrador rápido de postulación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick application draft"
+          }
+        }
+      }
+    },
+    "Bueno" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Good"
+          }
+        }
+      }
+    },
+    "Buscar becas por universidad, país o carrera" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search by university, country or major"
+          }
+        }
+      }
+    },
+    "Cambiar contraseña" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change password"
+          }
+        }
+      }
+    },
+    "Cambios guardados" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changes saved"
+          }
+        }
+      }
+    },
+    "Cancelar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "Cancelar postulación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel application"
+          }
+        }
+      }
+    },
+    "Carrera" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Major"
+          }
+        }
+      }
+    },
+    "Carrera o Programa" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Major or Program"
+          }
+        }
+      }
+    },
+    "Carta de aceptación de intercambio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exchange acceptance letter"
+          }
+        }
+      }
+    },
+    "Carta de aceptación del posgrado" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graduate program acceptance letter"
+          }
+        }
+      }
+    },
+    "Carta de motivos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motivation letter"
+          }
+        }
+      }
+    },
+    "Cartas de recomendación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recommendation letters"
+          }
+        }
+      }
+    },
+    "Cerrar sesión" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out"
+          }
+        }
+      }
+    },
+    "Certificado de bachillerato" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High school certificate"
+          }
+        }
+      }
+    },
+    "Certificado de estudios" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcript"
+          }
+        }
+      }
+    },
+    "Certificado de idioma" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language certificate"
+          }
+        }
+      }
+    },
+    "Certificado de inglés" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English certificate"
+          }
+        }
+      }
+    },
+    "Certificado médico" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medical certificate"
+          }
+        }
+      }
+    },
+    "Ciclo 2026" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2026 Cycle"
+          }
+        }
+      }
+    },
+    "Ciencias de la Salud" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Health Sciences"
+          }
+        }
+      }
+    },
+    "Ciencias e Investigación" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Science and Research"
+          }
+        }
+      }
+    },
+    "Ciencias Sociales" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Social Sciences"
+          }
+        }
+      }
+    },
+    "Cierra en %lld días" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in %lld days"
+          }
+        }
+      }
+    },
+    "Cierra en 9 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 9 days"
+          }
+        }
+      }
+    },
+    "Cierra en 12 días" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 12 days"
+          }
+        }
+      }
+    },
+    "Cierra en 12 días (30 Mayo)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 12 days (May 30)"
+          }
+        }
+      }
+    },
+    "Cierra en 15 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 15 days"
+          }
+        }
+      }
+    },
+    "Cierra en 18 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 18 days"
+          }
+        }
+      }
+    },
+    "Cierra en 20 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 20 days"
+          }
+        }
+      }
+    },
+    "Cierra en 25 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 25 days"
+          }
+        }
+      }
+    },
+    "Cierra en 28 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 28 days"
+          }
+        }
+      }
+    },
+    "Cierra en 33 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 33 days"
+          }
+        }
+      }
+    },
+    "Cierra en 40 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 40 days"
+          }
+        }
+      }
+    },
+    "Cierra en 45 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 45 days"
+          }
+        }
+      }
+    },
+    "Cierra en 50 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 50 days"
+          }
+        }
+      }
+    },
+    "Cierra en 55 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 55 days"
+          }
+        }
+      }
+    },
+    "Cierra en 70 días" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes in 70 days"
+          }
+        }
+      }
+    },
+    "Cierre: 30 de Noviembre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadline: November 30"
+          }
+        }
+      }
+    },
+    "Cobertura" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coverage"
+          }
+        }
+      }
+    },
+    "Cobertura parcial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partial coverage"
+          }
+        }
+      }
+    },
+    "Cobertura total" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full coverage"
+          }
+        }
+      }
+    },
+    "Cobertura total · España, UK, Alemania" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full coverage · Spain, UK, Germany"
+          }
+        }
+      }
+    },
+    "Colegiatura + manutención + vuelo redondo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuition + stipend + round-trip flight"
+          }
+        }
+      }
+    },
+    "Colegiatura + manutención mensual" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuition + monthly stipend"
+          }
+        }
+      }
+    },
+    "Compatibilidad" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibility"
+          }
+        }
+      }
+    },
+    "Completa tu perfil para ver becas para ti" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complete your profile to see scholarships for you"
+          }
+        }
+      }
+    },
+    "Completar expediente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complete my file"
+          }
+        }
+      }
+    },
+    "Comprobante de domicilio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proof of address"
+          }
+        }
+      }
+    },
+    "Con tu promedio actual (**%@**), desbloqueas el **%lld%% de las convocatorias internacionales** como Fundación Carolina, Santander y Chevening." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With your current GPA (**%1$@**), you unlock **%2$lld%% of international calls** such as Fundación Carolina, Santander and Chevening."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Con tu promedio actual (**%1$@**), desbloqueas el **%2$lld%% de las convocatorias internacionales** como Fundación Carolina, Santander y Chevening."
+          }
+        }
+      }
+    },
+    "Conecta con becas nacionales e internacionales según tu perfil académico." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect with national and international scholarships based on your academic profile."
+          }
+        }
+      }
+    },
+    "Confirmar contraseña" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm password"
+          }
+        }
+      }
+    },
+    "Confirmar nueva contraseña" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm new password"
+          }
+        }
+      }
+    },
+    "Conocimientos básicos de computación" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basic computer skills"
+          }
+        }
+      }
+    },
+    "Constancia de estudios" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proof of enrollment"
+          }
+        }
+      }
+    },
+    "Consultando tipo de cambio…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checking exchange rate…"
+          }
+        }
+      }
+    },
+    "Continuar con correo institucional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with school email"
+          }
+        }
+      }
+    },
+    "Continuar postulación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue application"
+          }
+        }
+      }
+    },
+    "Contraseña" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
+    },
+    "Contraseña (mín. 8 caracteres)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password (min. 8 characters)"
+          }
+        }
+      }
+    },
+    "Contraseña actual" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current password"
+          }
+        }
+      }
+    },
+    "Contraseña actualizada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password updated"
+          }
+        }
+      }
+    },
+    "Convocatoria abierta" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open call"
+          }
+        }
+      }
+    },
+    "Convocatorias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calls"
+          }
+        }
+      }
+    },
+    "Convocatorias abiertas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open calls"
+          }
+        }
+      }
+    },
+    "Convocatorias sugeridas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggested calls"
+          }
+        }
+      }
+    },
+    "Correo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        }
+      }
+    },
+    "Correo electrónico" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        }
+      }
+    },
+    "Crear cuenta" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create account"
+          }
+        }
+      }
+    },
+    "Cualquier área" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Any field"
+          }
+        }
+      }
+    },
+    "Cuenta" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account"
+          }
+        }
+      }
+    },
+    "CUENTA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ACCOUNT"
+          }
+        }
+      }
+    },
+    "Cuenta Institucional y Seguridad" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "School Account and Security"
+          }
+        }
+      }
+    },
+    "Cuenta vinculada: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Linked account: %@"
+          }
+        }
+      }
+    },
+    "Cuenta y seguridad" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account and security"
+          }
+        }
+      }
+    },
+    "CURP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CURP"
+          }
+        }
+      }
+    },
+    "Currículum" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résumé"
+          }
+        }
+      }
+    },
+    "Curso 100% gratuito" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100% free course"
+          }
+        }
+      }
+    },
+    "CV" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CV"
+          }
+        }
+      }
+    },
+    "Datos académicos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Academic info"
+          }
+        }
+      }
+    },
+    "Datos Académicos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Academic Info"
+          }
+        }
+      }
+    },
+    "Datos Certificados" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certified Data"
+          }
+        }
+      }
+    },
+    "Datos personales" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personal info"
+          }
+        }
+      }
+    },
+    "Datos Universitarios y Promedio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "University Info and GPA"
+          }
+        }
+      }
+    },
+    "Debajo del corte estándar (8.5)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Below the standard cutoff (8.5)"
+          }
+        }
+      }
+    },
+    "Dedicación de tiempo completo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full-time dedication"
+          }
+        }
+      }
+    },
+    "Destinos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destinations"
+          }
+        }
+      }
+    },
+    "Disponibilidad de 10 horas a la semana" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 hours a week available"
+          }
+        }
+      }
+    },
+    "Doctorado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PhD"
+          }
+        }
+      }
+    },
+    "Documentos solicitados" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Required documents"
+          }
+        }
+      }
+    },
+    "Documentos y Kardex Oficial" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documents and Official Transcript"
+          }
+        }
+      }
+    },
+    "Editar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        }
+      }
+    },
+    "Editar perfil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit profile"
+          }
+        }
+      }
+    },
+    "El archivo pesa más de 2 MB. Sube un PDF más pequeño." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The file is larger than 2 MB. Please upload a smaller PDF."
+          }
+        }
+      }
+    },
+    "Elegir foto" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose photo"
+          }
+        }
+      }
+    },
+    "Elige todas las opciones que te interesen." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose every option you are interested in."
+          }
+        }
+      }
+    },
+    "Elige tus preferencias en Perfil y guarda becas para recibir matches y avisos de cierre." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose your preferences in Profile and save scholarships to get matches and deadline reminders."
+          }
+        }
+      }
+    },
+    "En línea" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online"
+          }
+        }
+      }
+    },
+    "Escribe tu nombre." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your name."
+          }
+        }
+      }
+    },
+    "Escribe un correo válido." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a valid email."
+          }
+        }
+      }
+    },
+    "Español nativo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Native Spanish"
+          }
+        }
+      }
+    },
+    "Español, Inglés (B2), Francés (A1)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spanish, English (B2), French (A1)"
+          }
+        }
+      }
+    },
+    "Estados Unidos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "United States"
+          }
+        }
+      }
+    },
+    "Estar inscrito en bachillerato público" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enrolled in public high school"
+          }
+        }
+      }
+    },
+    "Estar inscrito en una universidad" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be enrolled in a university"
+          }
+        }
+      }
+    },
+    "Estar inscrito en una universidad mexicana" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be enrolled in a Mexican university"
+          }
+        }
+      }
+    },
+    "estudiante@iest.edu.mx" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "estudiante@iest.edu.mx"
+          }
+        }
+      }
+    },
+    "Excelente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excellent"
+          }
+        }
+      }
+    },
+    "Expediente centralizado para postulaciones" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Central file for applications"
+          }
+        }
+      }
+    },
+    "EXPEDIENTE Y POSTULACIONES" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FILE AND APPLICATIONS"
+          }
+        }
+      }
+    },
+    "Experiencia en el área de salud" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experience in the health field"
+          }
+        }
+      }
+    },
+    "Explorar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore"
+          }
+        }
+      }
+    },
+    "Extranjero" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abroad"
+          }
+        }
+      }
+    },
+    "Falta carta de recomendación académica firmada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missing signed academic recommendation letter"
+          }
+        }
+      }
+    },
+    "Falta Ensayo y Kardex" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missing Essay and Transcript"
+          }
+        }
+      }
+    },
+    "Falta: Constancia de idioma B2" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missing: B2 language certificate"
+          }
+        }
+      }
+    },
+    "Fecha de cierre" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closing date"
+          }
+        }
+      }
+    },
+    "Filtros" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filters"
+          }
+        }
+      }
+    },
+    "Financiamiento" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funding"
+          }
+        }
+      }
+    },
+    "Foto de perfil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile photo"
+          }
+        }
+      }
+    },
+    "Gestión de convocatorias y cronograma de postulación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manage calls and application timeline"
+          }
+        }
+      }
+    },
+    "Guardadas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved"
+          }
+        }
+      }
+    },
+    "Guardar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "Guardar cambios y actualizar compatibilidad" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save changes and update compatibility"
+          }
+        }
+      }
+    },
+    "Hace 2 horas" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 hours ago"
+          }
+        }
+      }
+    },
+    "Hace 3 días" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 days ago"
+          }
+        }
+      }
+    },
+    "Hola, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hi, %@"
+          }
+        }
+      }
+    },
+    "Humanidades y Artes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Humanities and Arts"
+          }
+        }
+      }
+    },
+    "IA, Datos, Sistemas Distribuidos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI, Data, Distributed Systems"
+          }
+        }
+      }
+    },
+    "Identificación del tutor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardian's ID"
+          }
+        }
+      }
+    },
+    "Identificación oficial" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Official ID"
+          }
+        }
+      }
+    },
+    "Idiomas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Languages"
+          }
+        }
+      }
+    },
+    "Idiomas e intereses" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Languages and interests"
+          }
+        }
+      }
+    },
+    "Idiomas y Certificaciones" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Languages and Certifications"
+          }
+        }
+      }
+    },
+    "IEST · Licenciatura · 9.2 GPA" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IEST · Bachelor's · 9.2 GPA"
+          }
+        }
+      }
+    },
+    "Impacto en Convocatorias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impact on Calls"
+          }
+        }
+      }
+    },
+    "INFORMACIÓN ACADÉMICA" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ACADEMIC INFORMATION"
+          }
+        }
+      }
+    },
+    "INFORMACIÓN INSTITUCIONAL" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INSTITUTIONAL INFORMATION"
+          }
+        }
+      }
+    },
+    "Ingeniería de Software" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Software Engineering"
+          }
+        }
+      }
+    },
+    "Ingeniería y Tecnología" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Engineering and Technology"
+          }
+        }
+      }
+    },
+    "Ingresa al menos 8 caracteres" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter at least 8 characters"
+          }
+        }
+      }
+    },
+    "Iniciar Sesión" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        }
+      }
+    },
+    "Institución" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Institution"
+          }
+        }
+      }
+    },
+    "Interés en liderazgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interest in leadership"
+          }
+        }
+      }
+    },
+    "Intereses" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interests"
+          }
+        }
+      }
+    },
+    "Internacional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "International"
+          }
+        }
+      }
+    },
+    "Japón" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Japan"
+          }
+        }
+      }
+    },
+    "Kardex" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcript"
+          }
+        }
+      }
+    },
+    "Kardex actualizado" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Updated transcript"
+          }
+        }
+      }
+    },
+    "Kardex Oficial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Official Transcript"
+          }
+        }
+      }
+    },
+    "Kardex, CV Europass, Cartas" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcript, Europass CV, Letters"
+          }
+        }
+      }
+    },
+    "La beca seguirá en tus guardadas y podrás postularte de nuevo antes del cierre." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The scholarship will stay in your saved list and you can apply again before it closes."
+          }
+        }
+      }
+    },
+    "La contraseña actual es incorrecta." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The current password is incorrect."
+          }
+        }
+      }
+    },
+    "La contraseña debe tener al menos 8 caracteres." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 8 characters."
+          }
+        }
+      }
+    },
+    "La contraseña es incorrecta." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The password is incorrect."
+          }
+        }
+      }
+    },
+    "La convocatoria %@ cierra en 3 días. ¡No olvides postularte!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The call %@ closes in 3 days. Don't forget to apply!"
+          }
+        }
+      }
+    },
+    "La nueva contraseña debe ser diferente a la actual." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The new password must be different from the current one."
+          }
+        }
+      }
+    },
+    "La próxima vez inicia sesión con tu nueva contraseña." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next time, log in with your new password."
+          }
+        }
+      }
+    },
+    "La recalificación de compatibilidad toma menos de 30 segundos." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recalculating compatibility takes less than 30 seconds."
+          }
+        }
+      }
+    },
+    "Las contraseñas no coinciden." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The passwords don't match."
+          }
+        }
+      }
+    },
+    "Licenciatura" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bachelor's"
+          }
+        }
+      }
+    },
+    "Listo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "Llegará en 5 segundos." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It will arrive in 5 seconds."
+          }
+        }
+      }
+    },
+    "Madrid, España" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Madrid, Spain"
+          }
+        }
+      }
+    },
+    "Maestría" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Master's"
+          }
+        }
+      }
+    },
+    "Manutención mensual" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly stipend"
+          }
+        }
+      }
+    },
+    "Marcar leídas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark as read"
+          }
+        }
+      }
+    },
+    "Matches" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matches"
+          }
+        }
+      }
+    },
+    "Matrícula + alojamiento + vuelo redondo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuition + housing + round-trip flight"
+          }
+        }
+      }
+    },
+    "Máximo (10.0)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max (10.0)"
+          }
+        }
+      }
+    },
+    "México" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mexico"
+          }
+        }
+      }
+    },
+    "México e Iberoamérica" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mexico and Latin America"
+          }
+        }
+      }
+    },
+    "Mi Perfil Académico" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Academic Profile"
+          }
+        }
+      }
+    },
+    "Mínimo (7.0)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min (7.0)"
+          }
+        }
+      }
+    },
+    "Monto o beneficio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amount or benefit"
+          }
+        }
+      }
+    },
+    "Muy bueno" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Very good"
+          }
+        }
+      }
+    },
+    "MXN" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MXN"
+          }
+        }
+      }
+    },
+    "Nacional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "National"
+          }
+        }
+      }
+    },
+    "Negocios y Liderazgo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Business and Leadership"
+          }
+        }
+      }
+    },
+    "Nivel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Level"
+          }
+        }
+      }
+    },
+    "Nivel Académico" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Academic Level"
+          }
+        }
+      }
+    },
+    "Nivel de estudios" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Education level"
+          }
+        }
+      }
+    },
+    "Nivel Inglés B2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English level B2"
+          }
+        }
+      }
+    },
+    "Nivel Inglés C1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English level C1"
+          }
+        }
+      }
+    },
+    "No" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        }
+      }
+    },
+    "No hay becas que coincidan con tu búsqueda." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No scholarships match your search."
+          }
+        }
+      }
+    },
+    "No hay una cuenta con ese correo. Regístrate primero." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There is no account with that email. Sign up first."
+          }
+        }
+      }
+    },
+    "No se pudo guardar el archivo. Intenta de nuevo." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The file couldn't be saved. Please try again."
+          }
+        }
+      }
+    },
+    "No se pudo obtener el tipo de cambio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't get the exchange rate"
+          }
+        }
+      }
+    },
+    "No se pudo subir el archivo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't upload the file"
+          }
+        }
+      }
+    },
+    "No tienes alertas todavía" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You don't have any alerts yet"
+          }
+        }
+      }
+    },
+    "No tienes becas guardadas. Toca el marcador en Explorar para guardar una." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have no saved scholarships. Tap the bookmark in Explore to save one."
+          }
+        }
+      }
+    },
+    "Nombre" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "Nombre completo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full name"
+          }
+        }
+      }
+    },
+    "Notificación programada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification scheduled"
+          }
+        }
+      }
+    },
+    "Nueva contraseña (mín. 8 caracteres)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New password (min. 8 characters)"
+          }
+        }
+      }
+    },
+    "Nueva convocatoria compatible" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New compatible call"
+          }
+        }
+      }
+    },
+    "Nueva convocatoria detectada para Ingeniería de Software. Compatible con tu promedio actual de 9.2 y tus créditos vigentes." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New call found for Software Engineering. Compatible with your current 9.2 GPA and your active credits."
+          }
+        }
+      }
+    },
+    "Nuevos Matches con tu perfil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Matches for your profile"
+          }
+        }
+      }
+    },
+    "o inicia con tu correo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "or log in with your email"
+          }
+        }
+      }
+    },
+    "Obligatorio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Required"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "Opcional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optional"
+          }
+        }
+      }
+    },
+    "Ordenar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort"
+          }
+        }
+      }
+    },
+    "Ordenar por" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort by"
+          }
+        }
+      }
+    },
+    "País" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Country"
+          }
+        }
+      }
+    },
+    "País de origen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home country"
+          }
+        }
+      }
+    },
+    "Parcial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partial"
+          }
+        }
+      }
+    },
+    "Pasaporte vigente" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valid passport"
+          }
+        }
+      }
+    },
+    "Pendiente (obligatorio)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending (required)"
+          }
+        }
+      }
+    },
+    "Perfil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        }
+      }
+    },
+    "Perfil %lld%% completado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile %lld%% complete"
+          }
+        }
+      }
+    },
+    "Perfil %lld%% completado para becas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile %lld%% complete for scholarships"
+          }
+        }
+      }
+    },
+    "Perfil validado exitosamente" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile successfully validated"
+          }
+        }
+      }
+    },
+    "Por mejorar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Needs improvement"
+          }
+        }
+      }
+    },
+    "Por vencer (%lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closing soon (%lld)"
+          }
+        }
+      }
+    },
+    "Portafolio de obra" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portfolio"
+          }
+        }
+      }
+    },
+    "Posgrado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graduate"
+          }
+        }
+      }
+    },
+    "Postulación registrada" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Application submitted"
+          }
+        }
+      }
+    },
+    "Postuladas (%lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applied (%lld)"
+          }
+        }
+      }
+    },
+    "Postularme" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apply"
+          }
+        }
+      }
+    },
+    "Preferencias de beca" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scholarship preferences"
+          }
+        }
+      }
+    },
+    "Preferencias de Beca y Destinos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scholarship Preferences and Destinations"
+          }
+        }
+      }
+    },
+    "Preparación de documentos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Document preparation"
+          }
+        }
+      }
+    },
+    "Presentar un proyecto artístico" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Submit an art project"
+          }
+        }
+      }
+    },
+    "Probar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test"
+          }
+        }
+      }
+    },
+    "Programa 100% gratuito" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100% free program"
+          }
+        }
+      }
+    },
+    "Promedio > 8.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPA > 8.5"
+          }
+        }
+      }
+    },
+    "Promedio General Acumulado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cumulative GPA"
+          }
+        }
+      }
+    },
+    "Promedio mínimo 8.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum GPA 8.0"
+          }
+        }
+      }
+    },
+    "Promedio mínimo 8.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum GPA 8.5"
+          }
+        }
+      }
+    },
+    "Promedio mínimo 8.8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum GPA 8.8"
+          }
+        }
+      }
+    },
+    "Proyecto artístico" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Art project"
+          }
+        }
+      }
+    },
+    "Puedes ver su avance en Guardadas › Postuladas." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can track it in Saved › Applied."
+          }
+        }
+      }
+    },
+    "Quitar archivo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove file"
+          }
+        }
+      }
+    },
+    "Quitar filtros" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear filters"
+          }
+        }
+      }
+    },
+    "Quitar foto" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove photo"
+          }
+        }
+      }
+    },
+    "Recordatorio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder"
+          }
+        }
+      }
+    },
+    "Recordatorio activado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder on"
+          }
+        }
+      }
+    },
+    "Recordatorio de beca" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scholarship reminder"
+          }
+        }
+      }
+    },
+    "Recordatorio desactivado" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder off"
+          }
+        }
+      }
+    },
+    "Recordatorios activados" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminders on"
+          }
+        }
+      }
+    },
+    "Recuperar contraseña" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recover password"
+          }
+        }
+      }
+    },
+    "Reemplazar archivo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Replace file"
+          }
+        }
+      }
+    },
+    "Regístrate aquí" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up here"
+          }
+        }
+      }
+    },
+    "Registro" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Up"
+          }
+        }
+      }
+    },
+    "Registro en Becas Santander" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up on Becas Santander"
+          }
+        }
+      }
+    },
+    "Reino Unido" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "United Kingdom"
+          }
+        }
+      }
+    },
+    "Reintentar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "RENDIMIENTO Y CALIFICACIONES" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PERFORMANCE AND GRADES"
+          }
+        }
+      }
+    },
+    "Requisitos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Requirements"
+          }
+        }
+      }
+    },
+    "Requisitos clave destacados:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key requirements:"
+          }
+        }
+      }
+    },
+    "Requisitos prioritarios pendientes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending priority requirements"
+          }
+        }
+      }
+    },
+    "Retorno al país de origen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Return to home country"
+          }
+        }
+      }
+    },
+    "Revisar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review"
+          }
+        }
+      }
+    },
+    "Se abrieron registros para estancias académicas semestrales en Iberoamérica. Compatible con tu plan de estudios." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registration is open for semester-long academic stays in Latin America. Compatible with your study plan."
+          }
+        }
+      }
+    },
+    "Seguridad" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Security"
+          }
+        }
+      }
+    },
+    "Ser de nacionalidad mexicana" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be a Mexican citizen"
+          }
+        }
+      }
+    },
+    "Ser estudiante regular" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be a regular student"
+          }
+        }
+      }
+    },
+    "Ser mayor de 18 años" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be at least 18 years old"
+          }
+        }
+      }
+    },
+    "Ser mujer universitaria o egresada" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be a female student or graduate"
+          }
+        }
+      }
+    },
+    "Sí, cancelar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes, cancel"
+          }
+        }
+      }
+    },
+    "Simulador de elegibilidad académica" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Academic eligibility simulator"
+          }
+        }
+      }
+    },
+    "Situación económica que lo justifique" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Financial need"
+          }
+        }
+      }
+    },
+    "Sube un PDF (máx. 2 MB)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload a PDF (max. 2 MB)"
+          }
+        }
+      }
+    },
+    "Subido" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uploaded"
+          }
+        }
+      }
+    },
+    "Subir nuevo Kardex" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload new transcript"
+          }
+        }
+      }
+    },
+    "Te avisamos 3 días antes del cierre de tus becas guardadas." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We'll remind you 3 days before your saved scholarships close."
+          }
+        }
+      }
+    },
+    "Te faltan documentos en tu expediente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your file is missing documents"
+          }
+        }
+      }
+    },
+    "Tener entre 17 y 25 años" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be between 17 and 25 years old"
+          }
+        }
+      }
+    },
+    "Tener entre 18 y 34 años" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be between 18 and 34 years old"
+          }
+        }
+      }
+    },
+    "Tipo de cambio del %@ · Frankfurter" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exchange rate from %@ · Frankfurter"
+          }
+        }
+      }
+    },
+    "Tipo de cobertura" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coverage type"
+          }
+        }
+      }
+    },
+    "Título Universitario" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "University degree"
+          }
+        }
+      }
+    },
+    "Título y certificado de estudios" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Degree and transcript"
+          }
+        }
+      }
+    },
+    "Título, CV, TOEFL" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Degree, CV, TOEFL"
+          }
+        }
+      }
+    },
+    "Toca para agregar tus idiomas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to add your languages"
+          }
+        }
+      }
+    },
+    "Toca para agregar tus intereses" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to add your interests"
+          }
+        }
+      }
+    },
+    "Toca para capturar tu promedio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to enter your GPA"
+          }
+        }
+      }
+    },
+    "Toca para elegir tus preferencias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to choose your preferences"
+          }
+        }
+      }
+    },
+    "Todas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "Todos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "Total" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full"
+          }
+        }
+      }
+    },
+    "Tu compatibilidad se actualizó correctamente." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your compatibility was updated successfully."
+          }
+        }
+      }
+    },
+    "Tu cuenta se guarda solo en este iPhone. Si ya iniciaste sesión, puedes cambiar tu contraseña en Perfil › Cuenta y seguridad." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your account is saved only on this iPhone. If you are logged in, you can change your password in Profile › Account and security."
+          }
+        }
+      }
+    },
+    "Tu perfil fue actualizado exitosamente: Validación de promedio IEST al 100% procesada por el departamento de becas." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your profile was updated successfully: IEST GPA validation 100% processed by the scholarship office."
+          }
+        }
+      }
+    },
+    "Tus datos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your info"
+          }
+        }
+      }
+    },
+    "Última actualización: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last updated: %@"
+          }
+        }
+      }
+    },
+    "Unión Europea" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "European Union"
+          }
+        }
+      }
+    },
+    "Universidad / Institución Educativa" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "University / Educational Institution"
+          }
+        }
+      }
+    },
+    "Urgente / Próximas a cerrar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urgent / Closing soon"
+          }
+        }
+      }
+    },
+    "Validación de pasaporte y visa previa completa" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passport and visa validation complete"
+          }
+        }
+      }
+    },
+    "Vencimientos" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadlines"
+          }
+        }
+      }
+    },
+    "Ver bases" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View rules"
+          }
+        }
+      }
+    },
+    "Ver beca" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View scholarship"
+          }
+        }
+      }
+    },
+    "Ver convocatoria" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View call"
+          }
+        }
+      }
+    },
+    "Ver detalles y enlaces" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View details and links"
+          }
+        }
+      }
+    },
+    "Ver postulación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View application"
+          }
+        }
+      }
+    },
+    "Ya existe una cuenta con ese correo." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An account with that email already exists."
+          }
+        }
+      }
+    },
+    "Ya postulaste" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applied"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

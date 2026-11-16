@@ -1,16 +1,11 @@
-//
-//  EncabezadoBecaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct EncabezadoBecaView: View {
     var siglas: String
     var institucion: String
     var titulo: String
+    var guardada: Bool = true
+    var alGuardar: () -> Void = {}
 
     var body: some View {
         HStack(alignment: .top) {
@@ -23,8 +18,14 @@ struct EncabezadoBecaView: View {
                     .font(.headline)
             }
             Spacer()
-            Image(systemName: "bookmark.fill")
-                .foregroundStyle(Color.colorazul)
+            Button(action: {
+                alGuardar()
+            }) {
+                Image(systemName: guardada ? "bookmark.fill" : "bookmark")
+                    .font(.title3)
+                    .foregroundStyle(Color.colorazul)
+            }
+            .buttonStyle(.plain)
         }
     }
 }

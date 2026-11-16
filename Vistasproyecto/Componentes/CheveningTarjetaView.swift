@@ -1,22 +1,19 @@
-//
-//  CheveningTarjetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct CheveningTarjetaView: View {
+    @Environment(AppEstado.self) var estado
+    @AppStorage("recordatorio-2") var recordatorio = true
+    let beca = BecaViewModel().getBecas()[1]
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            EncabezadoBecaView(siglas: "CH", institucion: "FOREIGN OFFICE UK", titulo: "Beca Chevening Postgrado Reino Unido")
+            EncabezadoBecaView(siglas: beca.siglas, institucion: beca.institucion.uppercased(), titulo: beca.titulo,
+                               guardada: estado.estaGuardada(beca), alGuardar: { estado.alternarGuardada(beca) })
 
             HStack {
-                EtiquetaView(texto: "94% Compatible", icono: "circle.fill", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
-                EtiquetaView(texto: "Cierra en 28 días", icono: "calendar", colorTexto: Color.orange, colorFondo: Color.colorambarclaro)
+                EtiquetaView(texto: "\(beca.compatibilidad)% Compatible", icono: "circle.fill", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
+                EtiquetaView(texto: "Cierra en \(beca.diasParaCierre) días", icono: "calendar", colorTexto: Color.orange, colorFondo: Color.colorambarclaro)
             }
-            EtiquetaView(texto: "Reino Unido")
+            EtiquetaView(texto: LocalizedStringKey(beca.pais))
 
             HStack {
                 Image(systemName: "alarm")
@@ -24,17 +21,23 @@ struct CheveningTarjetaView: View {
                     .frame(width: 32, height: 32)
                     .background(Color.colorazulclaro)
                     .clipShape(Circle())
-                VStack(alignment: .leading) {
-                    Text("Alarma programada")
-                        .font(.subheadline.weight(.medium))
-                    Text("Alertas de seguimiento quincenal")
-                        .font(.caption)
-                        .foregroundStyle(Color.gray)
+                Toggle(isOn: $recordatorio) {
+                    VStack(alignment: .leading) {
+                        Text(recordatorio ? "Recordatorio activado" : "Recordatorio desactivado")
+                            .font(.subheadline.weight(.medium))
+                        Text("Aviso 3 días antes del cierre")
+                            .font(.caption)
+                            .foregroundStyle(Color.gray)
+                    }
                 }
-                Spacer()
-                Text("Configurada")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(Color.colorazul)
+                .tint(Color.colorazuloscuro)
+                .onChange(of: recordatorio) {
+                    if recordatorio {
+                        Notificaciones.shared.programarRecordatorio(beca)
+                    } else {
+                        Notificaciones.shared.cancelarRecordatorio(beca)
+                    }
+                }
             }
             .padding(12)
             .background(Color.colorfondo)
@@ -67,7 +70,7 @@ struct CheveningTarjetaView: View {
                         .foregroundStyle(Color.colorverde)
                 }
                 Spacer()
-                Button(action: {}) {
+                NavigationLink(destination: BecaDetalleView(beca: beca)) {
                     Label("Ver detalles y enlaces", systemImage: "arrow.up.right.square")
                         .font(.subheadline.weight(.semibold))
                         .padding(12)
@@ -82,7 +85,10 @@ struct CheveningTarjetaView: View {
 }
 
 #Preview {
-    CheveningTarjetaView()
-        .padding()
-        .background(Color.colorfondo)
+    NavigationStack {
+        CheveningTarjetaView()
+            .padding()
+            .background(Color.colorfondo)
+    }
+    .environment(AppEstado())
 }

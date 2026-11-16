@@ -1,24 +1,20 @@
-//
-//  CarolinaTarjetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct CarolinaTarjetaView: View {
-    @State var recordatorio = true
+    @Environment(AppEstado.self) var estado
+    @AppStorage("recordatorio-1") var recordatorio = true
+    let beca = BecaViewModel().getBecas()[0]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            EncabezadoBecaView(siglas: "FC", institucion: "FUNDACIÓN CAROLINA", titulo: "Máster en Inteligencia Artificial Aplicada")
+            EncabezadoBecaView(siglas: beca.siglas, institucion: beca.institucion.uppercased(), titulo: beca.titulo,
+                               guardada: estado.estaGuardada(beca), alGuardar: { estado.alternarGuardada(beca) })
 
             HStack {
-                EtiquetaView(texto: "98% Compatible", icono: "circle.fill", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
-                EtiquetaView(texto: "Cierra en 12 días", icono: "clock", colorTexto: Color.colorrojo, colorFondo: Color.colorrojoclaro)
+                EtiquetaView(texto: "\(beca.compatibilidad)% Compatible", icono: "circle.fill", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
+                EtiquetaView(texto: "Cierra en \(beca.diasParaCierre) días", icono: "clock", colorTexto: Color.colorrojo, colorFondo: Color.colorrojoclaro)
             }
-            EtiquetaView(texto: "Madrid, España")
+            EtiquetaView(texto: LocalizedStringKey(beca.pais))
 
             HStack {
                 Image(systemName: "bell")
@@ -30,12 +26,19 @@ struct CarolinaTarjetaView: View {
                     VStack(alignment: .leading) {
                         Text(recordatorio ? "Recordatorio activado" : "Recordatorio desactivado")
                             .font(.subheadline.weight(.medium))
-                        Text("Aviso 3 días antes (18 Octubre)")
+                        Text("Aviso 3 días antes del cierre")
                             .font(.caption)
                             .foregroundStyle(Color.gray)
                     }
                 }
                 .tint(Color.colorazuloscuro)
+                .onChange(of: recordatorio) {
+                    if recordatorio {
+                        Notificaciones.shared.programarRecordatorio(beca)
+                    } else {
+                        Notificaciones.shared.cancelarRecordatorio(beca)
+                    }
+                }
             }
             .padding(12)
             .background(Color.colorfondo)
@@ -78,11 +81,11 @@ struct CarolinaTarjetaView: View {
                         .font(.title3.weight(.bold))
                         .foregroundStyle(Color.colorverde)
                 }
-                
+
                 Spacer()
-                Button(action: {}) {
+                NavigationLink(destination: BecaDetalleView(beca: beca)) {
                     HStack {
-                        Text("Continuar postulación")
+                        Text(estado.postuladas.contains(beca.id) ? "Ver postulación" : "Continuar postulación")
                         Image(systemName: "arrow.right")
                     }
                     .font(.subheadline.weight(.semibold))
@@ -99,7 +102,10 @@ struct CarolinaTarjetaView: View {
 }
 
 #Preview {
-    CarolinaTarjetaView()
-        .padding()
-        .background(Color.colorfondo)
+    NavigationStack {
+        CarolinaTarjetaView()
+            .padding()
+            .background(Color.colorfondo)
+    }
+    .environment(AppEstado())
 }

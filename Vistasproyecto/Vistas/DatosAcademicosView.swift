@@ -1,52 +1,38 @@
-//
-//  DatosAcademicosView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct DatosAcademicosView: View {
+    @Environment(AppEstado.self) var estado
     @State var nivel = 1
-    @State var carrera = "Ingeniería de Software / Computación"
+    @State var carrera = ""
+    @State var promedio = 9.2
     @State var mostrarAlerta = false
+    @State var cargado = false
+    @State var elegirKardex = false
+    @State var errorKardex = ""
+    @State var mostrarErrorKardex = false
+
+    func guardarCambios() {
+        estado.nivel = nivel
+        estado.carrera = carrera
+        estado.promedio = promedio
+        mostrarAlerta = true
+    }
+
+    var porcentajeMatch: Int {
+        Int(min(100, max(0, (promedio - 6.0) / 3.4 * 100)))
+    }
+
+    var textoNivelPromedio: LocalizedStringKey {
+        if promedio >= 9.0 { return "Excelente" }
+        if promedio >= 8.5 { return "Muy bueno" }
+        if promedio >= 8.0 { return "Bueno" }
+        return "Por mejorar"
+    }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                VStack(alignment: .leading, spacing: 10) {
-                    HStack(alignment: .top, spacing: 12) {
-                        Image(systemName: "checkmark.seal")
-                            .font(.title3)
-                            .foregroundStyle(Color.colorazul)
-                            .frame(width: 40, height: 40)
-                            .background(Color.white)
-                            .clipShape(Circle())
-                        VStack(alignment: .leading, spacing: 4) {
-                            HStack {
-                                Text("Expediente Verificado")
-                                    .font(.headline)
-                                Spacer()
-                                EtiquetaView(texto: "Oficial", icono: "circle.fill", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
-                            }
-                            Text("Tus datos se sincronizan con la Dirección General de Administración Escolar para validar la compatibilidad de becas automáticamente.")
-                                .font(.caption)
-                                .foregroundStyle(Color.gray)
-                        }
-                    }
-                    Divider()
-                    HStack {
-                        Label("Sincronización activa", systemImage: "checkmark.circle")
-                            .foregroundStyle(Color.colorverde)
-                        Spacer()
-                        Text("ID Estudiantil: 22698")
-                            .foregroundStyle(Color.gray)
-                    }
-                    .font(.caption2)
-                }
-                .modifier(TarjetaViewModifier(colorFondo: Color.colorazulclaro.opacity(0.6)))
-
                 HStack {
                     Text("INFORMACIÓN INSTITUCIONAL")
                         .font(.caption.weight(.semibold))
@@ -61,26 +47,24 @@ struct DatosAcademicosView: View {
                     Text("Universidad / Institución Educativa")
                         .font(.caption.weight(.semibold))
                     HStack {
-                        Text("Instituto de Estudios Superiores de Tamaulipas")
+                        Text(estado.institucion == "" ? "Agrégala en Editar perfil" : "\(estado.institucion)")
                             .lineLimit(1)
                         Spacer()
-                        Image(systemName: "lock")
-                            .foregroundStyle(Color.gray)
                     }
                     .padding(12)
                     .background(Color.colorfondo)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
 
-                    Label("Cuenta institucional vinculada: estudiante@iest.edu.mx", systemImage: "envelope")
+                    Label("Cuenta vinculada: \(estado.correo)", systemImage: "envelope")
                         .font(.caption2)
                         .foregroundStyle(Color.gray)
 
                     Text("Nivel Académico")
                         .font(.caption.weight(.semibold))
                     HStack(spacing: 0) {
-                        botonNivel(id: 1, texto: "Licenciatura")
-                        botonNivel(id: 2, texto: "Maestría")
-                        botonNivel(id: 3, texto: "Doctorado")
+                        BotonPestanaView(texto: "Licenciatura", seleccionado: nivel == 1) { nivel = 1 }
+                        BotonPestanaView(texto: "Maestría", seleccionado: nivel == 2) { nivel = 2 }
+                        BotonPestanaView(texto: "Doctorado", seleccionado: nivel == 3) { nivel = 3 }
                     }
                     .padding(4)
                     .background(Color.colorazulclaro)
@@ -96,14 +80,6 @@ struct DatosAcademicosView: View {
                     .padding(12)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3)))
 
-                    Label("Facultad: Facultad de Ingeniería (IEST)", systemImage: "building.2")
-                        .font(.caption2)
-                        .foregroundStyle(Color.gray)
-
-                    HStack {
-                        campoChico(titulo: "Semestre / Avance", valor: "8vo Semestre (85%)", icono: "chevron.up.chevron.down")
-                        campoChico(titulo: "Fecha de Egreso", valor: "Diciembre 2026", icono: "calendar")
-                    }
                 }
                 .modifier(TarjetaViewModifier())
 
@@ -121,7 +97,7 @@ struct DatosAcademicosView: View {
                             Text("Promedio General Acumulado")
                                 .font(.caption)
                             HStack(alignment: .firstTextBaseline, spacing: 2) {
-                                Text("9.2")
+                                Text(String(format: "%.1f", promedio))
                                     .font(Font.system(size: 40, weight: .bold))
                                     .foregroundStyle(Color.colorazul)
                                 Text("/ 10")
@@ -130,8 +106,10 @@ struct DatosAcademicosView: View {
                         }
                         Spacer()
                         VStack(alignment: .trailing) {
-                            EtiquetaView(texto: "Excelente", icono: "star.circle", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
-                            Text("Top 5% de tu generación")
+                            EtiquetaView(texto: textoNivelPromedio, icono: "star.circle",
+                                         colorTexto: promedio >= 8.5 ? Color.colorverde : Color.orange,
+                                         colorFondo: promedio >= 8.5 ? Color.colorverdeclaro : Color.colorambarclaro)
+                            Text(promedio >= 8.5 ? "Arriba del corte estándar" : "Debajo del corte estándar (8.5)")
                                 .font(.caption2)
                         }
                     }
@@ -140,22 +118,12 @@ struct DatosAcademicosView: View {
                         HStack {
                             Label("Simulador de elegibilidad académica", systemImage: "slider.horizontal.3")
                             Spacer()
-                            Text("9.2 pts")
+                            Text(String(format: "%.1f pts", promedio))
                                 .foregroundStyle(Color.colorazul)
                         }
                         .font(.caption)
-                        GeometryReader { geometry in
-                            ZStack(alignment: .leading) {
-                                Capsule()
-                                    .fill(Color.gray.opacity(0.2))
-                                    .frame(height: 6)
-                                Circle()
-                                    .fill(Color.colorazuloscuro)
-                                    .frame(width: 18, height: 18)
-                                    .offset(x: geometry.size.width * 0.73 - 9)
-                            }
-                        }
-                        .frame(height: 18)
+                        Slider(value: $promedio, in: 7.0...10.0, step: 0.1)
+                            .tint(Color.colorazuloscuro)
                         HStack {
                             Text("Mínimo (7.0)")
                             Spacer()
@@ -172,10 +140,20 @@ struct DatosAcademicosView: View {
 
                     Divider()
 
-                    Label("Última actualización: 15 de Octubre 2026", systemImage: "clock")
-                        .font(.caption)
+                    if estado.kardexNombre == "" {
+                        Label("Aún no subes tu Kardex", systemImage: "clock")
+                            .font(.caption)
+                    } else {
+                        Label("Última actualización: \(estado.kardexFecha)", systemImage: "clock")
+                            .font(.caption)
+                        Label(estado.kardexNombre, systemImage: "doc.fill")
+                            .font(.caption)
+                            .foregroundStyle(Color.colorverde)
+                    }
 
-                    Button(action: {}) {
+                    Button(action: {
+                        elegirKardex = true
+                    }) {
                         Label("Subir nuevo Kardex", systemImage: "doc.badge.arrow.up")
                             .font(.subheadline.weight(.semibold))
                             .frame(maxWidth: .infinity)
@@ -197,9 +175,9 @@ struct DatosAcademicosView: View {
                             Text("Impacto en Convocatorias")
                                 .font(.headline)
                             Spacer()
-                            EtiquetaView(texto: "94% Match", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
+                            EtiquetaView(texto: "\(porcentajeMatch)% Match", colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
                         }
-                        Text("Con tu promedio actual (**9.2**), desbloqueas el **94% de las convocatorias internacionales** como Fundación Carolina, Santander y Chevening.")
+                        Text("Con tu promedio actual (**\(String(format: "%.1f", promedio))**), desbloqueas el **\(porcentajeMatch)% de las convocatorias internacionales** como Fundación Carolina, Santander y Chevening.")
                             .font(.subheadline)
                     }
                 }
@@ -209,7 +187,7 @@ struct DatosAcademicosView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 16))
 
                 Button(action: {
-                    mostrarAlerta = true
+                    guardarCambios()
                 }) {
                     Label("Guardar cambios y actualizar compatibilidad", systemImage: "arrow.triangle.2.circlepath")
                         .font(.headline)
@@ -225,6 +203,7 @@ struct DatosAcademicosView: View {
                     .frame(maxWidth: .infinity)
             }
             .padding()
+            .anchoMaximo()
         }
         .background(Color.colorfondo)
         .navigationTitle("Datos Académicos")
@@ -232,48 +211,38 @@ struct DatosAcademicosView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    mostrarAlerta = true
+                    guardarCambios()
                 }) {
                     Text("Guardar")
                         .bold()
                 }
             }
         }
+        .fileImporter(isPresented: $elegirKardex, allowedContentTypes: [.pdf]) { resultado in
+            if case .success(let url) = resultado {
+                if let error = estado.subirDocumento(url, tipo: "kardex") {
+                    errorKardex = error
+                    mostrarErrorKardex = true
+                }
+            }
+        }
+        .onAppear {
+            if !cargado {
+                nivel = estado.nivel
+                carrera = estado.carrera
+                promedio = estado.promedio == 0 ? 8.0 : estado.promedio
+                cargado = true
+            }
+        }
+        .alert("No se pudo subir el archivo", isPresented: $mostrarErrorKardex) {
+            Button("OK") {}
+        } message: {
+            Text(errorKardex)
+        }
         .alert("Cambios guardados", isPresented: $mostrarAlerta) {
             Button("OK") {}
         } message: {
             Text("Tu compatibilidad se actualizó correctamente.")
-        }
-    }
-
-    func botonNivel(id: Int, texto: String) -> some View {
-        Button(action: {
-            nivel = id
-        }) {
-            Text(texto)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(nivel == id ? Color.colorazul : Color.black)
-                .padding(.vertical, 8)
-                .frame(maxWidth: .infinity)
-                .background(nivel == id ? Color.white : Color.clear)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-        }
-    }
-
-    func campoChico(titulo: String, valor: String, icono: String) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(titulo)
-                .font(.caption.weight(.semibold))
-            HStack {
-                Text(valor)
-                    .font(.subheadline)
-                    .lineLimit(1)
-                Spacer()
-                Image(systemName: icono)
-                    .foregroundStyle(Color.gray)
-            }
-            .padding(12)
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray.opacity(0.3)))
         }
     }
 }
@@ -282,4 +251,5 @@ struct DatosAcademicosView: View {
     NavigationStack {
         DatosAcademicosView()
     }
+    .environment(AppEstado())
 }

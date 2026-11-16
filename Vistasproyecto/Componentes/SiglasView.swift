@@ -1,10 +1,3 @@
-//
-//  SiglasView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct SiglasView: View {

@@ -1,29 +1,22 @@
-//
-//  EncabezadoView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct EncabezadoView: View {
+    @Environment(AppEstado.self) var estado
+    var alPresionarAjustes: (() -> Void)? = nil
+
     var body: some View {
         HStack {
-            Text("KF")
-                .font(Font.system(size: 13, weight: .bold))
-                .foregroundStyle(Color.white)
-                .frame(width: 32, height: 32)
-                .background(Color.colorazul)
-                .clipShape(Circle())
+            FotoPerfilView(tamano: 32)
             Text("BecaMatch")
                 .font(Font.system(size: 20, weight: .bold))
                 .foregroundStyle(Color.colorazul)
             Spacer()
-            Button(action: {}) {
-                Image(systemName: "slider.horizontal.3")
-                    .font(.title3)
-                    .foregroundStyle(Color.colorazul)
+            if let accion = alPresionarAjustes {
+                Button(action: accion) {
+                    Image(systemName: "slider.horizontal.3")
+                        .font(.title3)
+                        .foregroundStyle(Color.colorazul)
+                }
             }
         }
     }
@@ -32,4 +25,5 @@ struct EncabezadoView: View {
 #Preview {
     EncabezadoView()
         .padding()
+        .environment(AppEstado())
 }

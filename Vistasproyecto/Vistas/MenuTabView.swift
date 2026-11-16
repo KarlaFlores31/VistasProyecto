@@ -1,13 +1,7 @@
-//
-//  MenuTabView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct MenuTabView: View {
+    @Environment(AppEstado.self) var estado
 
     var body: some View {
         TabView {
@@ -17,19 +11,28 @@ struct MenuTabView: View {
             Tab("Guardadas", systemImage: "bookmark") {
                 GuardadasView()
             }
-            .badge(2)
+            .badge(estado.guardadas.count)
             Tab("Alertas", systemImage: "bell") {
                 AlertasView()
             }
-            .badge(3)
+            .badge(estado.alertasNuevas)
             Tab("Perfil", systemImage: "graduationcap") {
                 PerfilView()
             }
         }
         .tint(Color.colorazul)
+        .onAppear {
+            Notificaciones.shared.pedirPermiso()
+            for beca in BecaViewModel().getBecas() {
+                if estado.guardadas.contains(beca.id) && Notificaciones.shared.estaActivo(beca) {
+                    Notificaciones.shared.programarRecordatorio(beca)
+                }
+            }
+        }
     }
 }
 
 #Preview {
     MenuTabView()
+        .environment(AppEstado())
 }

@@ -1,15 +1,9 @@
-//
-//  BorradorTarjetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
-
 struct BorradorTarjetaView: View {
-    func filaDocumento(titulo: String, detalle: String, listo: Bool) -> some View {
+    @Environment(AppEstado.self) var estado
+
+    func filaDocumento(titulo: LocalizedStringKey, detalle: LocalizedStringKey, listo: Bool) -> some View {
         HStack {
             Image(systemName: listo ? "checkmark.seal" : "pencil.and.list.clipboard")
                 .foregroundStyle(listo ? Color.colorverde : Color.orange)
@@ -28,7 +22,7 @@ struct BorradorTarjetaView: View {
         .background(listo ? Color.colorfondo : Color.colorambarclaro)
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top) {
@@ -45,22 +39,25 @@ struct BorradorTarjetaView: View {
                         .foregroundStyle(Color.gray)
                 }
                 Spacer()
-                Button(action: {}) {
+                NavigationLink(destination: DatosAcademicosView()) {
                     Text("Editar")
                         .font(.caption.weight(.semibold))
                 }
             }
 
-            filaDocumento(titulo: "Kardex Oficial", detalle: "Actualizado (PDF)", listo: true)
-            filaDocumento(titulo: "CV Académico", detalle: "Europass v3.2", listo: true)
-            filaDocumento(titulo: "Carta de motivos", detalle: "En revisión (85%)", listo: false)
+            filaDocumento(titulo: "Kardex", detalle: estado.kardexNombre == "" ? "Pendiente (obligatorio)" : "\(estado.kardexNombre)", listo: estado.kardexNombre != "")
+            filaDocumento(titulo: "CV", detalle: estado.cvNombre == "" ? "Pendiente (obligatorio)" : "\(estado.cvNombre)", listo: estado.cvNombre != "")
+            filaDocumento(titulo: "Cartas de recomendación", detalle: estado.cartasNombre == "" ? "Opcional" : "\(estado.cartasNombre)", listo: estado.cartasNombre != "")
         }
         .modifier(TarjetaViewModifier())
     }
 }
 
 #Preview {
-    BorradorTarjetaView()
-        .padding()
-        .background(Color.colorfondo)
+    NavigationStack {
+        BorradorTarjetaView()
+            .padding()
+            .background(Color.colorfondo)
+    }
+    .environment(AppEstado())
 }

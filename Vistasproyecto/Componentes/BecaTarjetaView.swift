@@ -1,15 +1,8 @@
-//
-//  BecaTarjetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct BecaTarjetaView: View {
+    @Environment(AppEstado.self) var estado
     var beca: BecaModel
-    @State var guardada: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -22,9 +15,9 @@ struct BecaTarjetaView: View {
                 .font(.caption)
                 Spacer()
                 Button(action: {
-                    guardada.toggle()
+                    estado.alternarGuardada(beca)
                 }) {
-                    Image(systemName: guardada ? "bookmark.fill" : "bookmark")
+                    Image(systemName: estado.estaGuardada(beca) ? "bookmark.fill" : "bookmark")
                         .font(.title3)
                         .foregroundStyle(Color.colorazul)
                 }
@@ -34,8 +27,16 @@ struct BecaTarjetaView: View {
                 EtiquetaView(texto: "\(beca.compatibilidad)% Compatible", icono: "circle.fill",
                              colorTexto: Color.colorverde, colorFondo: Color.colorverdeclaro)
                 .fixedSize()
-                EtiquetaView(texto: beca.cierre, icono: "clock")
+                EtiquetaView(texto: LocalizedStringKey(beca.cierre), icono: "clock")
                     .fixedSize()
+            }
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    EtiquetaView(texto: LocalizedStringKey(beca.pais), icono: "mappin")
+                    EtiquetaView(texto: LocalizedStringKey(beca.nivel), icono: "graduationcap")
+                    EtiquetaView(texto: beca.coberturaTotal ? "Cobertura total" : "Cobertura parcial", icono: "banknote")
+                }
             }
 
             Text(beca.titulo)
@@ -46,7 +47,7 @@ struct BecaTarjetaView: View {
                 .foregroundStyle(Color.gray)
             VStack(alignment: .leading, spacing: 6) {
                 ForEach(beca.requisitos, id: \.self) { requisito in
-                    EtiquetaView(texto: requisito, icono: "checkmark.circle")
+                    EtiquetaView(texto: LocalizedStringKey(requisito), icono: "checkmark.circle")
                 }
             }
 
@@ -59,7 +60,7 @@ struct BecaTarjetaView: View {
                     .font(.caption)
                     .foregroundStyle(Color.gray)
                 Spacer()
-                Button(action: {}) {
+                NavigationLink(destination: BecaDetalleView(beca: beca)) {
                     HStack {
                         Text("Ver convocatoria")
                             .fixedSize()
@@ -79,7 +80,10 @@ struct BecaTarjetaView: View {
 }
 
 #Preview {
-    BecaTarjetaView(beca: BecaViewModel().getBecas()[0])
-        .padding()
-        .background(Color.colorfondo)
+    NavigationStack {
+        BecaTarjetaView(beca: BecaViewModel().getBecas()[0])
+            .padding()
+            .background(Color.colorfondo)
+    }
+    .environment(AppEstado())
 }

@@ -1,43 +1,54 @@
-//
-//  GuardadasView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct GuardadasView: View {
-    @State var orden = 1
+    @Environment(AppEstado.self) var estado
+    let listaBecas: [BecaModel] = BecaViewModel().getBecas()
     @State var pestaña = 1
-    
-    func botonOrden(id: Int, texto: String) -> some View {
-        Button(action: {
-            orden = id
-        }) {
-            Text(texto)
-                .font(.caption.weight(.semibold))
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6)
-                .background(orden == id ? Color.colorazuloscuro : Color.white)
-                .foregroundStyle(orden == id ? Color.white : Color.black)
-                .clipShape(Capsule())
-                .overlay(Capsule().stroke(Color.gray.opacity(0.2)))
+
+    func ordenar(_ becas: [BecaModel]) -> [BecaModel] {
+        becas.sorted { $0.diasParaCierre < $1.diasParaCierre }
+    }
+
+    var porVencer: [BecaModel] {
+        ordenar(listaBecas.filter { estado.guardadas.contains($0.id) && !estado.postuladas.contains($0.id) })
+    }
+
+    var postuladas: [BecaModel] {
+        ordenar(listaBecas.filter { estado.postuladas.contains($0.id) })
+    }
+
+    @ViewBuilder
+    func tarjeta(_ beca: BecaModel) -> some View {
+        if beca.id == 1 {
+            CarolinaTarjetaView()
+        } else if beca.id == 2 {
+            CheveningTarjetaView()
+        } else {
+            BecaTarjetaView(beca: beca)
         }
     }
 
-    func botonPestañas(id: Int, texto: String) -> some View {
-        Button(action: {
-            pestaña = id
-        }) {
-            Text(texto)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(pestaña == id ? Color.colorazul : Color.black)
-                .padding(.vertical, 8)
-                .frame(maxWidth: .infinity)
-                .background(pestaña == id ? Color.white : Color.clear)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
+    func avisoCierre(_ beca: BecaModel) -> some View {
+        HStack {
+            Image(systemName: "hourglass")
+            Text("¡Faltan \(beca.diasParaCierre) días para que cierre!")
+            Spacer()
         }
+        .font(.subheadline.weight(.bold))
+        .foregroundStyle(beca.diasParaCierre <= 15 ? Color.colorrojo : Color.colorcafe)
+        .padding(.horizontal, 16)
+        .padding(.top, 10)
+        .padding(.bottom, 26)
+        .background(beca.diasParaCierre <= 15 ? Color.colorrojoclaro : Color.colorambarclaro)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+
+    func mensajeVacio(_ texto: LocalizedStringKey) -> some View {
+        Text(texto)
+            .foregroundStyle(Color.gray)
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 40)
     }
 
     var body: some View {
@@ -46,7 +57,6 @@ struct GuardadasView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     EncabezadoView()
 
-                    
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Becas Guardadas")
@@ -56,62 +66,43 @@ struct GuardadasView: View {
                                 .foregroundStyle(Color.gray)
                         }
                         Spacer()
-                        EtiquetaView(texto: "2 activas", colorTexto: Color.colorazul, colorFondo: Color.colorazulclaro)
+                        EtiquetaView(texto: "\(estado.guardadas.count) activas", colorTexto: Color.colorazul, colorFondo: Color.colorazulclaro)
                     }
 
-                    
-                    HStack {
-                        Label("Ordenar:", systemImage: "arrow.up.arrow.down")
-                            .font(.caption)
-                            .foregroundStyle(Color.gray)
-                        botonOrden(id: 1, texto: "Por fecha de cierre")
-                        botonOrden(id: 2, texto: "Por compatibilidad")
-                    }
-
-                    
-                    HStack(spacing: 12) {
-                        Image(systemName: "alarm")
-                            .font(.title2)
-                            .foregroundStyle(Color.white)
-                            .frame(width: 48, height: 48)
-                            .background(Color.colorazuloscuro)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("2 convocatorias por vencer")
-                                .font(.subheadline.weight(.semibold))
-                                .foregroundStyle(Color.colorazul)
-                            Text("Próximo cierre en **12 días**. Recordatorios activados.")
-                                .font(.subheadline)
-                                .foregroundStyle(Color.gray)
-                        }
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(Color.colorazul)
-                    }
-                    .modifier(TarjetaViewModifier(colorFondo: Color.colorazulclaro, colorBorde: Color.colorazul.opacity(0.3)))
-
-                    
                     HStack(spacing: 0) {
-                        botonPestañas(id: 1, texto: "Por vencer (2)")
-                        botonPestañas(id: 2, texto: "Postuladas (1)")
-                        botonPestañas(id: 3, texto: "Historial")
+                        BotonPestanaView(texto: "Por vencer (\(porVencer.count))", seleccionado: pestaña == 1) { pestaña = 1 }
+                        BotonPestanaView(texto: "Postuladas (\(postuladas.count))", seleccionado: pestaña == 2) { pestaña = 2 }
                     }
                     .padding(4)
                     .background(Color.gray.opacity(0.12))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
 
                     if pestaña == 1 {
-                        CarolinaTarjetaView()
-                        CheveningTarjetaView()
+                        if porVencer.isEmpty {
+                            mensajeVacio("No tienes becas guardadas. Toca el marcador en Explorar para guardar una.")
+                        }
+                        ForEach(porVencer) { beca in
+                            if beca.diasParaCierre <= 60 {
+                                VStack(spacing: -16) {
+                                    avisoCierre(beca)
+                                    tarjeta(beca)
+                                }
+                            } else {
+                                tarjeta(beca)
+                            }
+                        }
                         BorradorTarjetaView()
                     } else {
-                        Text("Aquí aparecerán tus becas de esta sección.")
-                            .foregroundStyle(Color.gray)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 40)
+                        if postuladas.isEmpty {
+                            mensajeVacio("Aún no te has postulado a ninguna beca.")
+                        }
+                        ForEach(postuladas) { beca in
+                            BecaTarjetaView(beca: beca)
+                        }
                     }
                 }
                 .padding()
+                .anchoMaximo()
             }
             .background(Color.colorfondo)
             .navigationBarHidden(true)
@@ -121,4 +112,5 @@ struct GuardadasView: View {
 
 #Preview {
     GuardadasView()
+        .environment(AppEstado())
 }

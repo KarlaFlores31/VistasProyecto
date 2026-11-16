@@ -1,41 +1,46 @@
-//
-//  MatchTarjetaView.swift
-//  Vistasproyecto
-//
-//  Created by Karla Flores on 18/10/26.
-//
-
 import SwiftUI
 
 struct MatchTarjetaView: View {
     var match: MatchModel
+    var leida: Bool = false
+    var alAccion: () -> Void = {}
+    var destacada: Bool? = nil
+
+    var verde: Bool { destacada ?? (match.id == 1) }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                EtiquetaView(texto: match.etiqueta,
-                             colorTexto: match.id == 1 ? Color.colorverde : Color.colorazul,
-                             colorFondo: match.id == 1 ? Color.colorverdeclaro : Color.colorazulclaro)
-                Text(match.detalle)
+                if !leida {
+                    Circle()
+                        .fill(Color.colorrojo)
+                        .frame(width: 8, height: 8)
+                }
+                EtiquetaView(texto: LocalizedStringKey(match.etiqueta),
+                             colorTexto: verde ? Color.colorverde : Color.colorazul,
+                             colorFondo: verde ? Color.colorverdeclaro : Color.colorazulclaro)
+                Text(LocalizedStringKey(match.detalle))
                     .font(.caption2)
                     .foregroundStyle(Color.gray)
                 Spacer()
-                Text(match.cuando)
+                Text(LocalizedStringKey(match.cuando))
                     .font(.caption2)
                     .foregroundStyle(Color.gray)
             }
-            Text(match.titulo)
+            Text(LocalizedStringKey(match.titulo))
                 .font(.headline)
-            Text(match.descripcion)
+            Text(LocalizedStringKey(match.descripcion))
                 .font(.caption)
                 .foregroundStyle(Color.gray)
             HStack {
-                Text(match.pie)
+                Text(LocalizedStringKey(match.pie))
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(match.id == 1 ? Color.colorverde : Color.gray)
+                    .foregroundStyle(verde ? Color.colorverde : Color.gray)
                 Spacer()
-                Button(action: {}) {
-                    Label(match.accion, systemImage: "arrow.right")
+                Button(action: {
+                    alAccion()
+                }) {
+                    Label(LocalizedStringKey(match.accion), systemImage: "arrow.right")
                         .font(.caption.weight(.semibold))
                         .padding(.horizontal, 10)
                         .padding(.vertical, 6)
